@@ -12,3 +12,6 @@
 
 
 ## <img src="ASSETS/lava-lamp.gif" width="38" align="center"> DESIGN PHILOSOPHY
+
+
+## <img src="ASSETS/green-github.gif" width="42" align="center"> CONTRIBUTE
