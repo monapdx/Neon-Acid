@@ -15,3 +15,6 @@
 
 
 ## <img src="ASSETS/green-github.gif" width="42" align="center"> CONTRIBUTE
+
+
+## <img src="ASSETS/green-nodes.gif" width="42" align="center"> BUILT FOR OBSIDIAN
