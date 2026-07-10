@@ -1,0 +1,376 @@
+.theme-dark {
+  --background-primary: #07070b !important;
+  --background-primary-alt: #0d0d14 !important;
+  --background-secondary: #101018 !important;
+  --background-secondary-alt: #161622 !important;
+
+  --titlebar-background: #07070b !important;
+  --titlebar-background-focused: #07070b !important;
+
+  --text-normal: #f4f4ff !important;
+  --text-muted: #c8c8d8 !important;
+  --text-faint: #8f8fa3 !important;
+
+  --interactive-accent: #39ff14 !important;
+  --interactive-accent-hover: #ff2bd6 !important;
+
+  --link-color: #00e5ff !important;
+  --link-color-hover: #39ff14 !important;
+
+  --divider-color: #39ff14 !important;
+  --background-modifier-border: #000 !important;
+
+  --h1-color: #39ff14;
+  --h2-color: #08080b;
+  --h3-color: #08080b;
+}
+
+/* Force the actual Obsidian UI dark */
+body,
+.app-container,
+.workspace,
+.workspace-split,
+.workspace-leaf,
+.workspace-leaf-content,
+.workspace-tabs,
+.workspace-tab-header-container,
+.view-content,
+.markdown-source-view,
+.markdown-reading-view,
+.markdown-preview-view,
+.cm-editor,
+.cm-scroller,
+.cm-content,
+.mod-root,
+.mod-sidedock,
+.nav-files-container,
+.nav-folder,
+.nav-file,
+.side-dock-ribbon,
+.status-bar,
+.titlebar,
+.workspace-ribbon {
+  background-color: #07070b !important;
+  color: #f4f4ff !important;
+}
+
+/* Main editor page */
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 .cm-editor {
+  background: #07070b !important;
+}
+
+/* File explorer items */
+.nav-folder-title,
+.nav-file-title {
+  background: #111118 !important;
+  color: #f4f4ff !important;
+  border: 4px solid #000 !important;
+  box-shadow: 4px 4px 0 #39ff14 !important;
+  margin: 6px 8px !important;
+  padding: 5px 8px !important;
+  border-radius: 0 !important;
+}
+
+/* Active file */
+.nav-file-title.is-active {
+  background: #ff2bd6 !important;
+  color: #07070b !important;
+  font-weight: 900 !important;
+}
+
+/* Typography */
+.markdown-preview-view,
+.cm-content {
+  font-family: "IBM Plex Sans", Inter, sans-serif !important;
+  color: #f4f4ff !important;
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.cm-header {
+  font-family: Oswald, Impact, sans-serif !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+}
+
+/* Headings */
+.markdown-preview-view h1 {
+  color: #39ff14 !important;
+  border-bottom: 5px solid #ff2bd6 !important;
+}
+
+.markdown-preview-view h2 {
+  background: #ff2bd6 !important;
+  color: #07070b !important;
+  border: 5px solid #000 !important;
+  box-shadow: 6px 6px 0 #39ff14 !important;
+  padding: 0.35em 0.55em !important;
+}
+
+.markdown-preview-view h3 {
+  background: #00e5ff !important;
+  color: #07070b !important;
+  border: 5px solid #000 !important;
+  box-shadow: 6px 6px 0 #b76cff !important;
+  padding: 0.3em 0.5em !important;
+}
+
+/* Links */
+.markdown-preview-view a,
+.internal-link,
+.external-link,
+.cm-hmd-internal-link,
+.cm-link {
+  color: #00e5ff !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  border-bottom: 3px solid #39ff14 !important;
+}
+
+.markdown-preview-view a:hover,
+.internal-link:hover,
+.external-link:hover {
+  background: #ff2bd6 !important;
+  color: #07070b !important;
+}
+
+/* Reading mode tags */
+.tag,
+.tag[href],
+a.tag {
+    display: inline-block;
+    background: #39ff14 !important;
+    color: #08080b !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none !important;
+
+    border: 3px solid #000 !important;
+    box-shadow: 3px 3px 0 #ff2bd6 !important;
+
+    padding: 3px 8px;
+    margin: 2px;
+    border-radius: 0;
+}
+
+/* Live Preview tags */
+.cm-hashtag,
+.cm-hashtag-begin,
+.cm-hashtag-end {
+    background: #39ff14 !important;
+    color: #08080b !important;
+    font-weight: 800 !important;
+
+    border: 3px solid #000 !important;
+    box-shadow: 3px 3px 0 #ff2bd6 !important;
+
+    padding: 1px 6px !important;
+    border-radius: 0 !important;
+}
+
+/* Hover */
+.tag:hover,
+a.tag:hover {
+    background: #ff2bd6 !important;
+    color: #08080b !important;
+    box-shadow: 3px 3px 0 #39ff14 !important;
+}
+
+/* No borders on checklist/list items */
+.markdown-preview-view li,
+.HyperMD-list-line {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  accent-color: #39ff14 !important;
+}
+
+/* Tables/code/callouts */
+.markdown-preview-view table,
+.markdown-preview-view pre,
+.callout,
+.markdown-preview-view blockquote {
+  background: #111118 !important;
+  color: #f4f4ff !important;
+  border: 5px solid #000 !important;
+  box-shadow: 6px 6px 0 #00e5ff !important;
+  border-radius: 0 !important;
+}
+/* Code block container ONLY */
+.markdown-rendered pre,
+.markdown-preview-view pre {
+    background: #161622 !important;
+    border: 5px solid #000 !important;
+    box-shadow: 6px 6px 0 #00e5ff !important;
+    border-radius: 0 !important;
+    padding: 16px !important;
+}
+
+/* Code text */
+.markdown-rendered pre code,
+.markdown-preview-view pre code {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #f4f4ff !important;
+    padding: 0 !important;
+}
+
+/* Remove boxes around syntax-highlighted tokens */
+.markdown-rendered pre code *,
+.markdown-preview-view pre code * {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+/* HTML/XML tag names */
+.token.tag,
+.cm-tag {
+    color: #39ff14 !important;   /* Electric lime */
+    font-weight: 700;
+}
+
+/* < and > */
+.token.punctuation,
+.cm-punctuation {
+    color: #00e5ff !important;   /* Cyan */
+}
+
+/* Attribute names */
+.token.attr-name,
+.cm-attribute {
+    color: #ff2bd6 !important;   /* Hot pink */
+}
+
+/* Attribute values */
+.token.attr-value,
+.cm-string {
+    color: #b76cff !important;   /* Heliotrope */
+}
+
+/* Generic code text */
+.markdown-rendered pre code,
+.markdown-preview-view pre code {
+    color: #f4f4ff !important;
+}
+/*──────────────────────────────────────────────*/
+/* TABLES */
+/*──────────────────────────────────────────────*/
+
+.markdown-rendered table,
+.markdown-preview-view table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+
+    background: #151520;
+    color: #f4f4ff;
+
+    border: 5px solid #000;
+    box-shadow: 6px 6px 0 #00e5ff;
+}
+
+/* Header */
+
+.markdown-rendered thead,
+.markdown-preview-view thead {
+    background: #b76cff;
+}
+
+.markdown-rendered th,
+.markdown-preview-view th {
+    background: #b76cff !important;
+    color: #08080b !important;
+
+    font-family: Oswald, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    border: 3px solid #000;
+    padding: 10px 14px;
+}
+
+/* Cells */
+
+.markdown-rendered td,
+.markdown-preview-view td {
+    background: #151520;
+    color: #f4f4ff !important;
+
+    border: 3px solid #000;
+    padding: 10px 14px;
+    vertical-align: top;
+}
+
+/* Zebra striping */
+
+.markdown-rendered tbody tr:nth-child(even),
+.markdown-preview-view tbody tr:nth-child(even) {
+    background: #1b1b28;
+}
+
+.markdown-rendered tbody tr:nth-child(even) td,
+.markdown-preview-view tbody tr:nth-child(even) td {
+    background: #1b1b28;
+}
+
+/* Hover */
+
+.markdown-rendered tbody tr:hover td,
+.markdown-preview-view tbody tr:hover td {
+    background: #202035;
+}
+
+/* Links inside tables */
+
+.markdown-rendered td a,
+.markdown-preview-view td a {
+    color: #00e5ff !important;
+}
+
+/* Bold text */
+
+.markdown-rendered td strong,
+.markdown-preview-view td strong {
+    color: #39ff14;
+}
+/* ===========================
+   SETTINGS WINDOW
+   =========================== */
+
+.modal.mod-settings,
+.vertical-tab-content,
+.vertical-tab-content-container,
+.setting-item,
+.setting-item-info,
+.setting-item-control {
+    background: #111118 !important;
+    color: #f4f4ff !important;
+}
+
+.modal.mod-settings .modal-content {
+    background: #111118 !important;
+}
+
+.modal.mod-settings h2,
+.modal.mod-settings h3 {
+    color: #39ff14 !important;
+}
+
+.setting-item-name {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+.setting-item-description {
+    color: #bdbdd0 !important;
+}
