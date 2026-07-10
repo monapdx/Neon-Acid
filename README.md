@@ -9,3 +9,6 @@
 </p>
 
 ## <img src="ASSETS/sparkles.gif" width="42" align="center"> PURE IRIDESCENCE
+
+
+## <img src="ASSETS/lava-lamp.gif" width="38" align="center"> DESIGN PHILOSOPHY
