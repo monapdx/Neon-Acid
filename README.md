@@ -7,3 +7,5 @@
 <p align="center">
   <strong>Will hurt your eyes in the best possible way.</strong>
 </p>
+
+## <img src="ASSETS/sparkles.gif" width="42" align="center"> PURE IRIDESCENCE
