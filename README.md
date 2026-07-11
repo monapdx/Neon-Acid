@@ -91,7 +91,7 @@ Neon Acid transforms Obsidian into a vibrant neo-brutalist workspace filled with
 
 A (now dead) white man known for doing philosophy (and for being a bit 'emo') once uttered: 
 
-> <img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/abyss-quote.gif"> Battle not with monsters, lest ye become a monster, and if you gaze into the abyss, the abyss gazes also into you". 
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/abyss-quote.gif">
 
 Until now, no one could be sure of exactly what this man had been speaking of... It was definitely Neon Acid.
 
