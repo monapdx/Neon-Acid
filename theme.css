@@ -374,3 +374,134 @@ input[type="checkbox"] {
 .setting-item-description {
     color: #bdbdd0 !important;
 }
+
+.markdown-rendered h1::before {
+  content: "";
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 0.45em;
+  vertical-align: -0.25em;
+
+  background-image: url("https://github.com/monapdx/Neon-Acid/raw/main/ASSETS/beakers.gif");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-folder-title[data-path="/"]::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  background-image: url("https://github.com/monapdx/Neon-Acid/raw/main/ASSETS/beakers.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.workspace-tab-header.is-active::after {
+  content: "https://github.com/monapdx/Neon-Acid/raw/main/ASSETS/sparkles.gif";
+  color: var(--color-accent);
+  margin-left: 6px;
+  animation: neon-acid-pulse 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes neon-acid-pulse {
+  from {
+    opacity: 0.55;
+    transform: scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+.workspace-leaf-content[data-type="graph"] .view-header-title::before {
+  content: "https://github.com/monapdx/Neon-Acid/raw/main/ASSETS/green-nodes.gif";
+  margin-right: 0.4rem;
+  color: #68ff00;
+}
+
+/* Shared illustrated callout layout */
+.callout[data-callout^="acid-"] {
+  position: relative;
+  min-height: 150px;
+  padding: 24px 28px 24px 190px;
+
+  border: 7px solid var(--acid-border);
+  border-radius: 0;
+  background: var(--acid-bg);
+  color: #111;
+
+  box-shadow: none;
+  overflow: hidden;
+}
+
+/* Remove Obsidian's normal callout title/icon */
+.callout[data-callout^="acid-"] .callout-title {
+  display: none;
+}
+
+/* Main body */
+.callout[data-callout^="acid-"] .callout-content {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Decorative quote mark */
+.callout[data-callout^="acid-"]::after {
+  content: "❝";
+  position: absolute;
+  top: 18px;
+  left: 185px;
+
+  font-size: 28px;
+  font-weight: 900;
+  color: #111;
+}
+
+/* Large illustration */
+.callout[data-callout^="acid-"]::before {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 50%;
+  width: 125px;
+  height: 125px;
+
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.callout[data-callout="acid-thought"] {
+  --acid-bg: #a9c4f5;
+  --acid-border: #125ad7;
+}
+
+.callout[data-callout="acid-thought"]::before {
+  background-image: url("https://github.com/monapdx/Neon-Acid/raw/main/ASSETS/beakers.gif");
+}
+
+.callout[data-callout="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/magenta-quote.gif"] {
+  --acid-bg: #12c6ee;
+  --acid-border: #8be9ff;
+}
+
+.callout[data-callout="acid-soap"]::before {
+  background-image: url("https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/floppy.gif");
+}
+
+.callout[data-callout="acid-heart"] {
+  --acid-bg: #f6bdd7;
+  --acid-border: #ff1b87;
+}
+
+.callout[data-callout="acid-heart"]::before {
+  background-image: url("https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/sparkles.gif");
+}
+
+
