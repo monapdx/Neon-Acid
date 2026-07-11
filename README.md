@@ -59,24 +59,24 @@ Neon Acid transforms Obsidian into a vibrant neo-brutalist workspace filled with
 
 ## RELATED TOPICS LIST
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/RELATED-TOPICS.png">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/Screenshots/RELATED-TOPICS.png">
 
 ## EDITOR VS READING VIEW
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/edit-read-view.gif">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/Screenshots/edit-read-view.gif">
 
 ## HEADINGS
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/HEADINGS.gif">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/Screenshots/HEADINGS.gif">
 
 
 ## SECTIONS
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/SECTIONS.gif">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/Screenshots/SECTIONS.gif">
 
 ## CHECKLISTS & TABLES
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/CHECKLIST-TABLE.gif">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/Screenshots/CHECKLIST-TABLE.gif">
 
 
 **Warning:** Neon Acid contains approximately **700%** more neon than is considered medically advisable.
@@ -91,7 +91,7 @@ Neon Acid transforms Obsidian into a vibrant neo-brutalist workspace filled with
 
 A (now dead) white man known for doing philosophy (and for being a bit 'emo') once uttered: 
 
-> <img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/ASSETS/abyss-quote.gif"> Battle not with monsters, lest ye become a monster, and if you gaze into the abyss, the abyss gazes also into you". 
+> <img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/abyss-quote.gif"> Battle not with monsters, lest ye become a monster, and if you gaze into the abyss, the abyss gazes also into you". 
 
 Until now, no one could be sure of exactly what this man had been speaking of... It was definitely Neon Acid.
 
