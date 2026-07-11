@@ -1,13 +1,8 @@
-<p align="center">
-  <img src="ASSETS/beakers.gif" width="160">
-</p>
-
 <h1 align="center">NEON ACID</h1>
 
 <p align="center">
   <strong>Will hurt your eyes in the best possible way.</strong>
 </p>
-
 
 ## <img src="ASSETS/sparkles.gif" width="42" align="center"> PURE IRIDESCENCE
 
@@ -59,29 +54,29 @@ Neon Acid transforms Obsidian into a vibrant neo-brutalist workspace filled with
 
 ## MAIN VAULT VIEW
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/NEON-ACID.png">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/Screenshots/NEON-ACID.png">
 
 
 ## RELATED TOPICS LIST
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/RELATED-TOPICS.png">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/Screenshots/RELATED-TOPICS.png">
 
 ## EDITOR VS READING VIEW
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/edit-read-view.gif">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/Screenshots/edit-read-view.gif">
 
 ## HEADINGS
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/HEADINGS.gif">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/Screenshots/HEADINGS.gif">
 
 
 ## SECTIONS
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/SECTIONS.gif">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/Screenshots/SECTIONS.gif">
 
 ## CHECKLISTS & TABLES
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/CHECKLIST-TABLE.gif">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/Screenshots/CHECKLIST-TABLE.gif">
 
 
 **Warning:** Neon Acid contains approximately **700%** more neon than is considered medically advisable.
@@ -101,38 +96,40 @@ A (now dead) white man known for doing philosophy (and for being a bit 'emo') on
 Until now, no one could be sure of exactly what this man had been speaking of... It was definitely Neon Acid.
 
 
-## Neon Acid is...
+Neon Acid is...
 
-- A highlighter.
+A highlighter.
 
-- A glowstick.
+A glowstick.
 
-- A bright orange transparent backpack straight out of 1994.
+A bright orange transparent backpack straight out of 1994.
 
-- Pure iridescence
+A college kid high on ecstasy at a fucking rave.
 
-## RADIOACTIVE
+Pure iridescence.
 
-- Borders thick enough to survive re-entry.
+RADIOACTIVE
 
-- Hover effects with absolutely no indoor voice.
+Borders thick enough to survive re-entry.
 
-- Colors so bright you could swear they give off a low humming noise if you listen closely.
+Hover effects with absolutely no indoor voice.
 
-## Design Inspiration
+Colors so bright you could swear they give off a low humming noise if you listen closely.
 
-**Neon Acid was inspired by:**
+Design Inspiration
 
-- ☢️ Radioactive waste
-- 🧪 Chemistry sets
-- 🌈 Glow sticks
-- 🔦 Blacklights
-- 💿 1990s transparent plastic
-- 🟩 Highlighters
-- ✨ Iridescence
-- 🌋 Lava lamps
-- 🛼 Roller rinks
-- 🎮 Late-night arcades
+Neon Acid was inspired by:
 
+☢️ Radioactive waste
+🧪 Chemistry sets
+🌈 Glow sticks
+🔦 Blacklights
+💿 1990s transparent plastic
+🟩 Highlighters
+✨ Iridescence
+🌋 Lava lamps
+🛼 Roller rinks
+🎮 Late-night arcades
 
+fluorescent
 
