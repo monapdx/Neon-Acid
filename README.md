@@ -63,7 +63,7 @@ Neon Acid transforms Obsidian into a vibrant neo-brutalist workspace filled with
 
 ## EDITOR VS READING VIEW
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/Screenshots/edit-read-view.gif">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/Screenshots/EDITOR-READ.gif">
 
 ## HEADINGS
 
