@@ -96,40 +96,37 @@ A (now dead) white man known for doing philosophy (and for being a bit 'emo') on
 Until now, no one could be sure of exactly what this man had been speaking of... It was definitely Neon Acid.
 
 
-Neon Acid is...
+## Neon Acid is...
 
-A highlighter.
+- A highlighter.
 
-A glowstick.
+- A glowstick.
 
-A bright orange transparent backpack straight out of 1994.
+- A bright orange transparent backpack straight out of 1994.
 
-A college kid high on ecstasy at a fucking rave.
+- A college kid high on ecstasy at a fucking rave.
 
-Pure iridescence.
+- Pure iridescence.
 
-RADIOACTIVE
+- RADIOACTIVE
 
-Borders thick enough to survive re-entry.
+- Borders thick enough to survive re-entry.
 
-Hover effects with absolutely no indoor voice.
+- Hover effects with absolutely no indoor voice.
 
-Colors so bright you could swear they give off a low humming noise if you listen closely.
+- Colors so bright you could swear they give off a low humming noise if you listen closely.
 
-Design Inspiration
+## Design Inspiration
 
-Neon Acid was inspired by:
+**Neon Acid was inspired by:**
 
-☢️ Radioactive waste
-🧪 Chemistry sets
-🌈 Glow sticks
-🔦 Blacklights
-💿 1990s transparent plastic
-🟩 Highlighters
-✨ Iridescence
-🌋 Lava lamps
-🛼 Roller rinks
-🎮 Late-night arcades
-
-fluorescent
-
+- ☢️ Radioactive waste
+- 🧪 Chemistry sets
+- 🌈 Glow sticks
+- 🔦 Blacklights
+- 💿 1990s transparent plastic
+- 🟩 Highlighters
+- ✨ Iridescence
+- 🌋 Lava lamps
+- 🛼 Roller rinks
+- 🎮 Late-night arcades
