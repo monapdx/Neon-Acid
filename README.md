@@ -54,7 +54,7 @@ Neon Acid transforms Obsidian into a vibrant neo-brutalist workspace filled with
 
 ## MAIN VAULT VIEW
 
-<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/ASSETS/refs/heads/main/Screenshots/NEON-ACID.png">
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/Screenshots/NEON-ACID.png">
 
 
 ## RELATED TOPICS LIST
