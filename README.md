@@ -96,6 +96,23 @@ A (now dead) white man known for doing philosophy (and for being a bit 'emo') on
 Until now, no one could be sure of exactly what this man had been speaking of... It was definitely Neon Acid.
 
 
+## Installation
+
+### Community Themes
+
+1. Open **Settings → Appearance**
+2. Click **Manage** under Community Themes
+3. Search for **Neon Acid**
+4. Click **Install**
+5. Click **Use**
+
+## Customization
+
+Neon Acid works out of the box.
+
+Additional customization options may be added in future releases.
+
+
 ## Neon Acid is...
 
 - A highlighter.
