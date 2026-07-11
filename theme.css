@@ -1,3 +1,18 @@
+:root {
+  /* Neon Acid shared tokens must exist in both light and dark appearance modes. */
+  --neon-acid-pink: #ff2bd6;
+  --neon-acid-purple: #b76cff;
+  --neon-acid-green: #39ff14;
+  --neon-acid-cyan: #00e5ff;
+  --neon-acid-black: #000;
+  --neon-acid-ink: #07070b;
+  --neon-acid-border-width: 5px;
+  --neon-acid-shadow-offset: 6px;
+  --neon-acid-shadow-offset-hover: 8px;
+  --neon-acid-hover-nudge: -2px;
+  --neon-acid-hover-duration: 0.08s;
+}
+
 .theme-dark {
   --background-primary: #07070b !important;
   --background-primary-alt: #0d0d14 !important;
@@ -23,6 +38,7 @@
   --h1-color: #39ff14;
   --h2-color: #08080b;
   --h3-color: #08080b;
+
 }
 
 /* Force the actual Obsidian UI dark */
@@ -192,74 +208,394 @@ input[type="checkbox"] {
   accent-color: #39ff14 !important;
 }
 
-/* Tables/code/callouts */
+/* Tables / callouts / blockquotes (code blocks styled separately below) */
 .markdown-preview-view table,
-.markdown-preview-view pre,
 .callout,
 .markdown-preview-view blockquote {
   background: #111118 !important;
   color: #f4f4ff !important;
-  border: 5px solid #000 !important;
-  box-shadow: 6px 6px 0 #00e5ff !important;
+  border: var(--neon-acid-border-width) solid var(--neon-acid-black) !important;
+  box-shadow: var(--neon-acid-shadow-offset) var(--neon-acid-shadow-offset) 0 var(--neon-acid-cyan) !important;
   border-radius: 0 !important;
 }
-/* Code block container ONLY */
+
+/* ==========================================================
+   CONTENT IMAGES
+   ========================================================== */
+
+/*
+  Match heading neo-brutalist geometry (5px border, 6px hard offset).
+  Hot-pink frame + black offset shadow — same tactile system as
+  headings / interactive blocks, scoped to Markdown content only.
+*/
+
+.markdown-rendered img,
+.markdown-preview-view img,
+.markdown-source-view.mod-cm6 .image-embed img,
+.markdown-source-view.mod-cm6 .internal-embed.image-embed img,
+.markdown-source-view.mod-cm6 .internal-embed.media-embed img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: var(--neon-acid-border-width) solid var(--neon-acid-pink) !important;
+  border-radius: 0 !important;
+  box-shadow:
+    var(--neon-acid-shadow-offset) var(--neon-acid-shadow-offset) 0 var(--neon-acid-black) !important;
+  margin: 1em calc(var(--neon-acid-shadow-offset-hover) + 2px)
+    calc(1em + var(--neon-acid-shadow-offset-hover)) 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  vertical-align: middle;
+  transition:
+    transform var(--neon-acid-hover-duration) ease,
+    box-shadow var(--neon-acid-hover-duration) ease;
+}
+
+.markdown-rendered img:hover,
+.markdown-preview-view img:hover,
+.markdown-source-view.mod-cm6 .image-embed img:hover,
+.markdown-source-view.mod-cm6 .internal-embed.image-embed img:hover,
+.markdown-source-view.mod-cm6 .internal-embed.media-embed img:hover {
+  transform: translate(var(--neon-acid-hover-nudge), var(--neon-acid-hover-nudge));
+  box-shadow:
+    var(--neon-acid-shadow-offset-hover) var(--neon-acid-shadow-offset-hover) 0
+    var(--neon-acid-black) !important;
+}
+
+/* Wiki-link / attachment embed wrappers — no double frame */
+.markdown-rendered .internal-embed.image-embed,
+.markdown-preview-view .internal-embed.image-embed,
+.markdown-source-view.mod-cm6 .internal-embed.image-embed {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Do not frame UI icons, emojis, canvas, graph, Excalidraw, or tiny images */
+.workspace-ribbon img,
+.workspace-tab-header img,
+.nav-folder-title img,
+.nav-file-title img,
+.status-bar img,
+.titlebar img,
+.modal img,
+.vertical-tab-header img,
+.setting-item img,
+.canvas-wrapper img,
+.canvas-node img,
+.graph-view img,
+.workspace-leaf-content[data-type="graph"] img,
+.excalidraw-wrapper img,
+.layer-ui__wrapper img,
+.markdown-rendered img.emoji,
+.markdown-preview-view img.emoji,
+.cm-emoji img,
+.markdown-rendered .emoji img,
+.markdown-preview-view .emoji img,
+.markdown-rendered img[width="16"],
+.markdown-rendered img[width="18"],
+.markdown-rendered img[width="20"],
+.markdown-rendered img[width="24"],
+.markdown-rendered img[width="32"],
+.markdown-rendered img[width="48"],
+.markdown-preview-view img[width="16"],
+.markdown-preview-view img[width="18"],
+.markdown-preview-view img[width="20"],
+.markdown-preview-view img[width="24"],
+.markdown-preview-view img[width="32"],
+.markdown-preview-view img[width="48"],
+.markdown-source-view.mod-cm6 .image-embed img[width="16"],
+.markdown-source-view.mod-cm6 .image-embed img[width="18"],
+.markdown-source-view.mod-cm6 .image-embed img[width="20"],
+.markdown-source-view.mod-cm6 .image-embed img[width="24"],
+.markdown-source-view.mod-cm6 .image-embed img[width="32"],
+.markdown-source-view.mod-cm6 .image-embed img[width="48"],
+.markdown-rendered img[height="16"],
+.markdown-rendered img[height="18"],
+.markdown-rendered img[height="20"],
+.markdown-rendered img[height="24"],
+.markdown-rendered img[height="32"],
+.markdown-rendered img[height="48"],
+.markdown-preview-view img[height="16"],
+.markdown-preview-view img[height="18"],
+.markdown-preview-view img[height="20"],
+.markdown-preview-view img[height="24"],
+.markdown-preview-view img[height="32"],
+.markdown-preview-view img[height="48"] {
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .markdown-rendered img,
+  .markdown-preview-view img,
+  .markdown-source-view.mod-cm6 .image-embed img,
+  .markdown-source-view.mod-cm6 .internal-embed.image-embed img,
+  .markdown-source-view.mod-cm6 .internal-embed.media-embed img {
+    transition: none !important;
+  }
+
+  .markdown-rendered img:hover,
+  .markdown-preview-view img:hover,
+  .markdown-source-view.mod-cm6 .image-embed img:hover,
+  .markdown-source-view.mod-cm6 .internal-embed.image-embed img:hover,
+  .markdown-source-view.mod-cm6 .internal-embed.media-embed img:hover {
+    transform: none !important;
+    box-shadow:
+      var(--neon-acid-shadow-offset) var(--neon-acid-shadow-offset) 0
+      var(--neon-acid-black) !important;
+  }
+}
+
+/* ==========================================================
+   CODE BLOCKS
+   ========================================================== */
+
+/*
+  Reference treatment: black interior, hot-pink border, purple
+  hard offset shadow, fluorescent green default text.
+  Geometry matches headings (5px / 6px). Inline code stays compact.
+*/
+
 .markdown-rendered pre,
-.markdown-preview-view pre {
-    background: #161622 !important;
-    border: 5px solid #000 !important;
-    box-shadow: 6px 6px 0 #00e5ff !important;
-    border-radius: 0 !important;
-    padding: 16px !important;
+.markdown-preview-view pre,
+.markdown-source-view.mod-cm6 .cm-preview-code-block pre,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-begin + .cm-preview-code-block pre {
+  position: relative;
+  background: var(--neon-acid-black) !important;
+  color: var(--neon-acid-green) !important;
+  border: var(--neon-acid-border-width) solid var(--neon-acid-pink) !important;
+  border-radius: 0 !important;
+  box-shadow:
+    var(--neon-acid-shadow-offset) var(--neon-acid-shadow-offset) 0
+    var(--neon-acid-purple) !important;
+  padding: 1.1em 1.25em !important;
+  margin: 1em calc(var(--neon-acid-shadow-offset-hover) + 2px)
+    calc(1em + var(--neon-acid-shadow-offset-hover)) 0 !important;
+  overflow-x: auto;
+  transition:
+    transform var(--neon-acid-hover-duration) ease,
+    box-shadow var(--neon-acid-hover-duration) ease;
 }
 
-/* Code text */
+.markdown-rendered pre:hover,
+.markdown-preview-view pre:hover,
+.markdown-source-view.mod-cm6 .cm-preview-code-block pre:hover {
+  transform: translate(var(--neon-acid-hover-nudge), var(--neon-acid-hover-nudge));
+  box-shadow:
+    var(--neon-acid-shadow-offset-hover) var(--neon-acid-shadow-offset-hover) 0
+    var(--neon-acid-purple) !important;
+}
+
+/* Inner code: no nested frame; default fluorescent green */
 .markdown-rendered pre code,
-.markdown-preview-view pre code {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    color: #f4f4ff !important;
-    padding: 0 !important;
+.markdown-preview-view pre code,
+.markdown-source-view.mod-cm6 .cm-preview-code-block pre code {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: var(--neon-acid-green) !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
 }
 
-/* Remove boxes around syntax-highlighted tokens */
+/* Strip accidental boxes on tokens; keep token colors */
 .markdown-rendered pre code *,
 .markdown-preview-view pre code * {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
+
+/* Live Preview / Source: editing-mode code lines */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  background: var(--neon-acid-black) !important;
+  color: var(--neon-acid-green) !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-bg {
+  background: var(--neon-acid-black) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin {
+  border-top: var(--neon-acid-border-width) solid var(--neon-acid-pink) !important;
+  border-left: var(--neon-acid-border-width) solid var(--neon-acid-pink) !important;
+  border-right: var(--neon-acid-border-width) solid var(--neon-acid-pink) !important;
+  box-shadow:
+    var(--neon-acid-shadow-offset) 0 0 var(--neon-acid-purple) !important;
+  border-radius: 0 !important;
+  margin-top: 0.75em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+  border-left: var(--neon-acid-border-width) solid var(--neon-acid-pink) !important;
+  border-right: var(--neon-acid-border-width) solid var(--neon-acid-pink) !important;
+  box-shadow:
+    var(--neon-acid-shadow-offset) 0 0 var(--neon-acid-purple) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-end {
+  border-bottom: var(--neon-acid-border-width) solid var(--neon-acid-pink) !important;
+  border-left: var(--neon-acid-border-width) solid var(--neon-acid-pink) !important;
+  border-right: var(--neon-acid-border-width) solid var(--neon-acid-pink) !important;
+  box-shadow:
+    var(--neon-acid-shadow-offset) var(--neon-acid-shadow-offset) 0
+    var(--neon-acid-purple) !important;
+  border-radius: 0 !important;
+  margin-bottom: calc(0.75em + var(--neon-acid-shadow-offset-hover)) !important;
+}
+
+/* Inline code — compact; never the large block frame */
+.markdown-rendered :not(pre) > code,
+.markdown-preview-view :not(pre) > code,
+.markdown-source-view.mod-cm6 .cm-inline-code {
+  background: #111118 !important;
+  color: var(--neon-acid-green) !important;
+  border: 2px solid var(--neon-acid-pink) !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0.1em 0.35em !important;
+  font-size: 0.92em;
+}
+
+/* Language label + copy control remain usable */
+.markdown-rendered pre[class*="language-"]::before,
+.markdown-preview-view pre[class*="language-"]::before,
+.code-block-flair,
+.markdown-rendered .code-block-flair,
+.markdown-source-view.mod-cm6 .code-block-flair {
+  color: var(--neon-acid-cyan) !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-family: Oswald, Impact, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.markdown-rendered pre > button.copy-code-button,
+.markdown-preview-view pre > button.copy-code-button,
+.markdown-source-view.mod-cm6 button.copy-code-button {
+  background: var(--neon-acid-pink) !important;
+  color: var(--neon-acid-ink) !important;
+  border: 2px solid var(--neon-acid-black) !important;
+  border-radius: 0 !important;
+  box-shadow: 3px 3px 0 var(--neon-acid-purple) !important;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.markdown-rendered pre > button.copy-code-button:hover,
+.markdown-preview-view pre > button.copy-code-button:hover,
+.markdown-source-view.mod-cm6 button.copy-code-button:hover {
+  background: var(--neon-acid-green) !important;
+  box-shadow: 3px 3px 0 var(--neon-acid-pink) !important;
+}
+
+/* Selection inside code blocks */
+.markdown-rendered pre ::selection,
+.markdown-preview-view pre ::selection,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock ::selection,
+.markdown-source-view.mod-cm6 .cm-preview-code-block ::selection {
+  background: var(--neon-acid-pink) !important;
+  color: var(--neon-acid-ink) !important;
+}
+
+/* Line numbers (if enabled) */
+.markdown-rendered pre .cm-gutters,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-gutters,
+.markdown-rendered .code-block-line-numbers,
+.markdown-preview-view .code-block-line-numbers {
+  color: var(--neon-acid-cyan) !important;
+  border-right: 2px solid var(--neon-acid-pink) !important;
+  background: transparent !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .markdown-rendered pre,
+  .markdown-preview-view pre,
+  .markdown-source-view.mod-cm6 .cm-preview-code-block pre {
+    transition: none !important;
+  }
+
+  .markdown-rendered pre:hover,
+  .markdown-preview-view pre:hover,
+  .markdown-source-view.mod-cm6 .cm-preview-code-block pre:hover {
+    transform: none !important;
+    box-shadow:
+      var(--neon-acid-shadow-offset) var(--neon-acid-shadow-offset) 0
+      var(--neon-acid-purple) !important;
+  }
+}
+
+/* --- Syntax highlighting (preserve token contrast) --- */
+
 /* HTML/XML tag names */
 .token.tag,
 .cm-tag {
-    color: #39ff14 !important;   /* Electric lime */
-    font-weight: 700;
+  color: var(--neon-acid-green) !important; /* Electric lime */
+  font-weight: 700;
 }
 
 /* < and > */
 .token.punctuation,
 .cm-punctuation {
-    color: #00e5ff !important;   /* Cyan */
+  color: var(--neon-acid-cyan) !important; /* Cyan */
 }
 
 /* Attribute names */
 .token.attr-name,
 .cm-attribute {
-    color: #ff2bd6 !important;   /* Hot pink */
+  color: var(--neon-acid-pink) !important; /* Hot pink */
 }
 
-/* Attribute values */
+/* Attribute values / strings */
 .token.attr-value,
+.token.string,
 .cm-string {
-    color: #b76cff !important;   /* Heliotrope */
+  color: var(--neon-acid-purple) !important; /* Heliotrope */
 }
 
-/* Generic code text */
-.markdown-rendered pre code,
-.markdown-preview-view pre code {
-    color: #f4f4ff !important;
+/* Keywords */
+.token.keyword,
+.cm-keyword {
+  color: var(--neon-acid-pink) !important;
+  font-weight: 700;
+}
+
+/* Comments */
+.token.comment,
+.cm-comment {
+  color: #8f8fa3 !important;
+  font-style: italic;
+}
+
+/* Numbers / builtins */
+.token.number,
+.cm-number {
+  color: var(--neon-acid-cyan) !important;
+}
+
+.token.function,
+.cm-def,
+.cm-property {
+  color: var(--neon-acid-green) !important;
+}
+
+.token.operator,
+.cm-operator {
+  color: var(--neon-acid-cyan) !important;
+}
+
+.token.boolean,
+.cm-atom {
+  color: var(--neon-acid-pink) !important;
 }
 /*──────────────────────────────────────────────*/
 /* TABLES */
