@@ -1,5 +1,7 @@
 <h1 align="center">NEON ACID</h1>
 
+<img src="https://raw.githubusercontent.com/monapdx/Neon-Acid/refs/heads/main/ASSETS/banner.png">
+
 <p align="center">
   <strong>Will hurt your eyes in the best possible way.</strong>
 </p>
